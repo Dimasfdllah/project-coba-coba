@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(13, 26, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: rgb(21, 39, 63);
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 18px 5px 15px rgb(12, 23, 41), 0 15px 5px 40px rgb(12, 25, 44);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  margin: auto;
+  /* background-color: antiquewhite; */
+  /* width: 90%; */
+}
+
+.content .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.img img {
+  width: 210px;
+}
+
+.username {
+  margin-bottom: 12px;
+}
+
+.username p {
+  color: #f9fafb;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.text p {
+  color: rgb(83, 106, 140);
+  font-size: 0.79rem;
+}
+
+.text {
+  margin-bottom: 12px;
+}
+
+.diamond {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.diamond .gradient-text {
+  font-size: 0.7rem;
+  background: linear-gradient(#d5e564, #2c7e46);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+  position: relative;
+  bottom: 5px;
+}
+
+.diamond img {
+  width: 10px;
+  margin-right: 5px;
+}
+
+.diamond #time {
+  font-size: 11px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  position: relative;
+  bottom: 1px;
+  color: rgb(83, 106, 140);
+}
+
+.line {
+  border-top: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.creator p {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(83, 106, 140);
+}
+
+.creator span {
+  color: #f9fafb;
+}
+
+.creator img {
+  width: 25px;
+  height: 25px;
+}

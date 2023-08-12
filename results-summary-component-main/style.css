@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  background-color: #fff;
+  backdrop-filter: 10px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px #1e17e61f;
+  height: 70vh;
+  width: 680px;
+}
+
+section .result {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-image: linear-gradient(#5936f8, #1e17e6);
+}
+
+.result .text {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.result .radius {
+  border-radius: 50%;
+  background-image: linear-gradient(#4828d0, #2019df);
+  padding: 45px 60px;
+  margin-bottom: 25px;
+}
+
+.radius .num {
+  color: #fff;
+  font-size: 3.8em;
+  font-weight: 700;
+}
+
+.radius .transparent {
+  color: rgba(256, 256, 256, 0.4);
+  position: relative;
+  left: 10px;
+}
+
+.praise p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.words {
+  text-align: center;
+  margin: 20px;
+}
+
+.words p {
+  color: #ffffffc4;
+}
+
+.summary {
+  width: 400px;
+}
+
+.summary .content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 450px;
+}
+
+.content p {
+  position: relative;
+  font-weight: 500;
+  font-size: 23px;
+  right: 85px;
+}
+
+.summary .list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.summary .list ul li {
+  margin-bottom: 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  width: 100%;
+}
+
+.summary .list #red {
+  color: rgb(220, 60, 60);
+  background-color: rgba(246, 134, 134, 0.111);
+}
+.summary .list #red .jarak {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.summary .list #red .jarak .blur {
+  color: rgba(128, 128, 128, 0.6);
+}
+
+.summary .list #yellow {
+  color: rgb(255, 157, 0);
+  background-color: rgba(241, 210, 97, 0.111);
+}
+.summary .list #yellow .jarak {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.summary .list #yellow .jarak .blur {
+  color: rgba(128, 128, 128, 0.6);
+}
+
+.summary .list #green {
+  color: rgb(27, 132, 37);
+  background-color: rgba(113, 237, 154, 0.111);
+}
+.summary .list #green .jarak {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.summary .list #green .jarak .blur {
+  color: rgba(128, 128, 128, 0.6);
+}
+
+.summary .list #blue {
+  color: rgb(28, 38, 225);
+  background-color: rgba(127, 113, 237, 0.111);
+}
+.summary .list #blue .jarak {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.summary .list #blue .jarak .blur {
+  color: rgba(128, 128, 128, 0.6);
+}
+
+input {
+  background-color: #02002e;
+  color: #fff;
+  border: none;
+  width: 75%;
+  font-size: 15px;
+  padding: 12px 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+input:hover {
+  background-color: #1e17e6;
+}
+
+/* Add this CSS for responsive design */
+@media (max-width: 480px) {
+  section {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  section .result,
+  section .summary {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* .result .radius {
+    padding: 30px;
+  } */
+
+  .summary .list ul li {
+    padding: 12px 15px;
+  }
+
+  .summary .list #red .jarak,
+  .summary .list #yellow .jarak,
+  .summary .list #green .jarak,
+  .summary .list #blue .jarak {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+  }
+}
